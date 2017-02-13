@@ -1,1 +1,1 @@
-* * * * * ubuntu /bin/bash /home/ubuntu/apps/executive_orders/repository/run_on_server.sh fab $DEPLOYMENT_TARGET cron_jobs.test >> /var/log/executive_orders/crontab.log 2>&1
+* * * * * ubuntu /bin/bash /home/ubuntu/apps/executive_orders/repository/run_on_server.sh fab $DEPLOYMENT_TARGET cron_jobs.post_message >> /var/log/executive_orders/crontab.log 2>&1
