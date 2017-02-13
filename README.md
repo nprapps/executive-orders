@@ -2,7 +2,7 @@
 
 ## What is this?
 
-**TKTK: Describe executive-orders here.**
+**Executive Orders is a cron job that posts to a Slack webhook whenever new a new document is published on whitehouse.gov(https://www.whitehouse.gov/briefing-room/presidential-actions).**
 
 ## Assumptions
 
@@ -37,6 +37,14 @@ pip install -r requirements.txt
 Project secrets should **never** be stored in ``app_config.py`` or anywhere else in the repository. They will be leaked to the client if you do. Instead, always store passwords, keys, etc. in environment variables and document that they are needed here in the README.
 
 Any environment variable that starts with ``$PROJECT_SLUG_`` will be automatically loaded when ``app_config.get_secrets()`` is called.
+
+## Connecting to Slack
+
+To connect Clerk to your Slack, you will need to create an [incoming webhook](https://api.slack.com/incoming-webhooks) and copy the webhook endpoint to an environment variable called `clerk_WEBHOOK`. The default server setup expects the environment variable to be placed in `/etc/environment`.
+
+## Setting up servers
+
+Use the server configuration in [app_config.py](https://github.com/nprapps/clerk/blob/master/app_config.py#L36-L46) to set up your servers correctly. You can set the user, python version, and the folders where various pieces install.
 
 ## Deploy to EC2
 
