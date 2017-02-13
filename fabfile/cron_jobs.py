@@ -17,7 +17,9 @@ logging.basicConfig()
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
-WEBHOOK = 'https://hooks.slack.com/services/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'
+secrets = app_config.get_secrets()
+
+WEBHOOK = secrets['WEBHOOK']
 
 @task
 def post_message():
