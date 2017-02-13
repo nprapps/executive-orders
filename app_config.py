@@ -33,14 +33,14 @@ DEPLOYMENT
 PRODUCTION_S3_BUCKET = 'apps.npr.org'
 STAGING_S3_BUCKET = 'stage-apps.npr.org'
 
-PRODUCTION_SERVERS = ['cron.nprapps.org']
-STAGING_SERVERS = ['cron-staging.nprapps.org']
+PRODUCTION_SERVERS = ['54.221.31.112']
+STAGING_SERVERS = ['54.221.137.2']
 
 # Should code be deployed to the web/cron servers?
 DEPLOY_TO_SERVERS = True
 
 SERVER_USER = 'ubuntu'
-SERVER_PYTHON = 'python2.7'
+SERVER_PYTHON = 'python3'
 SERVER_PROJECT_PATH = '/home/%s/apps/%s' % (SERVER_USER, PROJECT_FILENAME)
 SERVER_REPOSITORY_PATH = '%s/repository' % SERVER_PROJECT_PATH
 SERVER_VIRTUALENV_PATH = '%s/virtualenv' % SERVER_PROJECT_PATH
