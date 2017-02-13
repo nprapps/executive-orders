@@ -2,7 +2,7 @@
 
 ## What is this?
 
-**Executive Orders is a cron job that posts to a Slack webhook whenever new a new document is published on whitehouse.gov(https://www.whitehouse.gov/briefing-room/presidential-actions).**
+**Executive Orders is a cron job that posts to a Slack webhook whenever new a new document is published on [whitehouse.gov](https://www.whitehouse.gov/briefing-room/presidential-actions).**
 
 ## Assumptions
 
