@@ -9,7 +9,7 @@
 The following things are assumed to be true in this documentation.
 
 * You are running OSX.
-* You are using Python 2.7. (Probably the version that came OSX.)
+* You are using Python 3. (Probably the version that came OSX.)
 * You have [virtualenv](https://pypi.python.org/pypi/virtualenv) and [virtualenvwrapper](https://pypi.python.org/pypi/virtualenvwrapper) installed and working.
 
 For more details our stack, see our [development environment blog post](http://blog.apps.npr.org/2013/06/06/how-to-setup-a-developers-environment.html).
@@ -28,7 +28,7 @@ The project contains the following folders and important files:
 
 ```
 cd executive-orders
-mkvirtualenv executive-orders
+mkvirtualenv -p `which python3` executive-orders
 pip install -r requirements.txt
 ```
 
